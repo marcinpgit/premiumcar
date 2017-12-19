@@ -6,37 +6,61 @@ body #page {
     padding: 0px;
 }
 
-#history-bmw, #performance, #newsletter, #features {
+.performance-section, .newsletter-section, .features-section {
     padding: 5px;
     filter: grayscale (80%);
     -webkit-filter: grayscale(80%);
 }
 
+.history-bmw-section {
+    padding: 5px;
+    filter: grayscale (90%);
+    -webkit-filter: grayscale(90%);
+}
+
+.section-title h2 {
+    color: #F2F2F2;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 1%;
+}
+
+.section-title-black h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 1%;
+}
+
 /*HEADER*/
-header {
+.intro-section {
     background-image: url("../img/pic1.jpg");
     background-size: cover;
     height: 100vh;
+    filter: grayscale (50%);
+    -webkit-filter: grayscale(50%);
 }
 
-header .navbar-logo {
+.intro-section .navbar-logo {
     width: 50%;
 }
 
-header .navbar {
+.intro-section .navbar {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 2px;
     background-color: rgba(71, 71, 71, 0.7);
 }
-header .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #DBDBDB;
+.intro-section .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #F2F2F2;
 }
 
-header h1 {
+.intro-section h1 {
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 200;
     color: #DBDBDB;
     letter-spacing: 3px;
     background-color: rgba(71, 71, 71, 0.6);
@@ -46,12 +70,12 @@ header h1 {
     left: 10%;
 }
 
-header h3 {
-    font-size: 20px;
-    font-weight: 100;
+.intro-section h3 {
+    font-size: 25px;
+    font-weight: 200;
     font-style: italic;
     text-align: center;
-    color: #DBDBDB;
+    color: #ffffff;
     letter-spacing: 2px;
     background-color: rgba(71, 71, 71, 0.8);
     padding:7px;
@@ -60,67 +84,30 @@ header h3 {
     right: 5%;
 }
 
-header h1 span {
-    font-weight: 300;
-}
-
-/*HISTORY-BMW*/
-.section-title h2 {
-    font-size: 40px;
-    font-weight: 100;
-    color: #DBDBDB;
-    letter-spacing: 3px;
-    background-color: rgba(71, 71, 71, 0.6);
-    padding:10px;
-    display: inline-block;
-}
-
-.section-title h2 span {
+.intro-section h1 span {
     font-weight: 400;
 }
 
-#history-bmw {
-    background-image: url("../img/pic2.jpeg");
+/*HISTORY-BMW*/
+.history-bmw-section{
+    background-image: url("../img/bmw111.jpeg");
     background-size: cover;
+    margin: 1%;
+
 }
 
 #history-bmw .history-container {
     background-color: rgba(71, 71, 71, 0.6);
     color: #F2F2F2;
-    font-weight: 100;
     letter-spacing: 2px;
-    line-height: 200%;
     margin: 2%;
     padding: 30px;
 }
 
 /*PERFORMANCE*/
-#performance {
-    background-color: #F7FAFF;
-}
-
-#performance .performance-container {
-    background-color: rgba(71, 71, 71, 0.8);
-    color: #F2F2F2;
-    font-weight: 100;
-    letter-spacing: 2px;
-    line-height: 200%;
-    margin-top: 2%;
-}
-
-#performance .car-models {
-    background-image: url("../img/pic6.jpeg");
-    background-size: cover;
-    padding: 0.5%;
-}
-
-#performance .inside-container p {
+#performance .car-models p {
     font-weight: 500;
-}
-
-#performance .inside-container {
-    background-color: rgba(71, 71, 71, 0.7);
-    padding: 10px;
+    border-bottom: 1px solid #000000;
 }
 
 #performance ul {
@@ -128,30 +115,45 @@ header h1 span {
 }
 
 #performance .intro-text {
-    color: #000000;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #performance .car-models {
-    color: #F2F2F2;
-    font-size: 20px;
-    line-height: 200%;
-    letter-spacing: 3px;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 1px;
     margin-top: 3%;
     margin-bottom: 20px;
     padding: 1%;
 }
 
-#performance .car-models p {
+#performance .bmw-list p {
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
 #performance span {
-    font-weight: 500;
+    font-weight: 600;
 }
+
+#performance .bmw-list {
+    background-color: #E6E8ED;
+    padding: 0.5%;
+}
+
+#performance .bmw-list p {
+    text-align: center;
+}
+
+#performance img {
+    opacity: 0.85;
+}
+
 /*NEWSLETTER*/
-#newsletter {
+.newsletter-section {
     background-image: url("../img/pic4.jpeg");
     background-size: cover;
     background-attachment: fixed;
@@ -160,25 +162,20 @@ header h1 span {
 #newsletter .performance-container {
     background-color: rgba(71, 71, 71, 0.6);
     color: #F2F2F2;
-    font-weight: 100;
     letter-spacing: 2px;
     line-height: 200%;
     margin: 2%;
 }
 
+#newsletter p {
+    font-weight: 500;
+}
+
 /*FEATURES*/
-#features {
+.features-section {
     background-image: url("../img/pic5.jpeg");
     background-size: cover;
     height: 100vh;
-}
-
-#features .section-title-last h2 {
-    color: #F2F2F2;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 40px;
-    margin: 1%;
 }
 
 #features .features-container {
