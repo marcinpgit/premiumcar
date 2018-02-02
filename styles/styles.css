@@ -34,6 +34,13 @@ body #page {
     margin: 1%;
 }
 
+.btn-secondary {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    opacity: 0.7;
+}
+
 /*HEADER*/
 .intro-section {
     background-image: url("../img/pic1.jpg");
