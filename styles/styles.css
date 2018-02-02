@@ -39,8 +39,8 @@ body #page {
     background-image: url("../img/pic1.jpg");
     background-size: cover;
     height: 100vh;
-    filter: grayscale (50%);
-    -webkit-filter: grayscale(50%);
+    filter: grayscale (80%);
+    -webkit-filter: grayscale(80%);
 }
 
 .intro-section .navbar-logo {
