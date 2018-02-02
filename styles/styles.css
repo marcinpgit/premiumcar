@@ -185,12 +185,25 @@ body #page {
     height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+    .features-section {
+        height: auto;
+    }
+}
+
 #features .features-container {
     margin-top: 5%;
     background-color: rgba(216, 216, 216, 0.6);
     margin-right: 0.5%;
     padding: 0.5%;
 }
+
+@media screen and (max-width: 768px) {
+    .features-container {
+        width: auto;
+    }
+}
+
 /*FOOTER*/
 #footer-container .footer-description{
     height: 35px;
@@ -202,3 +215,4 @@ body #page {
     letter-spacing: 3px;
     margin: 0px;
 }
+
