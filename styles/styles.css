@@ -198,12 +198,6 @@ body #page {
     padding: 0.5%;
 }
 
-@media screen and (max-width: 768px) {
-    .features-container {
-        width: auto;
-    }
-}
-
 /*FOOTER*/
 #footer-container .footer-description{
     height: 35px;
