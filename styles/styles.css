@@ -43,7 +43,7 @@ body #page {
 
 /*HEADER*/
 .intro-section {
-    background-image: url("../img/pic1.jpg");
+    background-image: url("../img/pic8.jpg");
     background-size: cover;
     height: 100vh;
     filter: grayscale (80%);
@@ -56,21 +56,20 @@ body #page {
 
 .intro-section .navbar {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     letter-spacing: 2px;
     background-color: rgba(71, 71, 71, 0.7);
 }
 .intro-section .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #F2F2F2;
+    color: #FFF;
 }
 
 .intro-section h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 200;
-    color: #DBDBDB;
     letter-spacing: 3px;
-    background-color: rgba(71, 71, 71, 0.6);
+    background-color: rgba(216, 216, 216, 0.8);
     padding:5px;
     position: absolute;
     top: 50%;
@@ -84,13 +83,9 @@ body #page {
 }
 
 .intro-section h3 {
-    font-size: 25px;
-    font-weight: 200;
-    font-style: italic;
+    font-size: 16px;
     text-align: center;
-    color: #ffffff;
-    letter-spacing: 2px;
-    background-color: rgba(71, 71, 71, 0.8);
+    background-color: rgba(216, 216, 216, 0.8);
     padding:7px;
     position: absolute;
     bottom: 10%;
@@ -102,17 +97,29 @@ body #page {
 }
 
 /*HISTORY-BMW*/
-.history-bmw-section{
-    background-image: url("../img/bmw111.jpeg");
+.history-bmw-section {
+    background-image: url("../img/pic7.jpg");
     background-size: cover;
+    height: 100vh;
 }
 
 #history-bmw .history-container {
-    background-color: rgba(71, 71, 71, 0.6);
-    color: #F2F2F2;
-    letter-spacing: 2px;
-    margin: 20%
+    background-color: rgba(216, 216, 216, 0.6);
+    color: #000;
+    margin: 1%;
     padding: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .history-bmw-section {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .history-bmw-section {
+        height: auto;
+    }
 }
 
 /*PERFORMANCE*/
