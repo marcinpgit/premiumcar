@@ -19,6 +19,7 @@ body #page {
 }
 
 .section-title h2 {
+    color: #F2F2F2;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 40px;
@@ -73,7 +74,6 @@ body #page {
     position: absolute;
     top: 50%;
     left: 10%;
-    box-shadow: 5px 5px 3px rgba(216, 216, 216, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -90,7 +90,6 @@ body #page {
     position: absolute;
     bottom: 10%;
     right: 5%;
-    box-shadow: 5px 5px 3px rgba(216, 216, 216, 0.5);
 }
 
 .intro-section h1 span {
