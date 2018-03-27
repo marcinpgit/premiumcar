@@ -45,6 +45,7 @@ body #page {
 .intro-section {
     background-image: url("../img/pic8.jpg");
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     filter: grayscale (80%);
     -webkit-filter: grayscale(80%);
